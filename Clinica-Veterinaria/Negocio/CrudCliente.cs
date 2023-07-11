@@ -12,14 +12,14 @@ namespace Clinica_Veterinaria.Negocio
     internal class CrudCliente
     {
 
-        //Intacia de la base de datos
+        //Intancia de la base de datos
         public static ClinicaVeterinariaContainer db = new ClinicaVeterinariaContainer();
 
-        public static List<Cliente> ListarCliente()
+        public static List<Cliente> ListarCliente()// Metodo para listar todos los familias
         {
             return db.Clientes.ToList();    
         }
-        public static int AgregarCliente(Cliente C)
+        public static int AgregarCliente(Cliente C)// Metodo para agregar un familia
         {
             db.Clientes.Add(C);
             return db.SaveChanges();
@@ -31,7 +31,7 @@ namespace Clinica_Veterinaria.Negocio
             return db.Clientes.Find(id);
         }
         //Metodo para editar un familia
-        public static int EditarCliente(Cliente C)
+        public static int EditarCliente(Cliente C)// Metodo para editar un familia
         {
             db.Entry(C).State = EntityState.Modified;
             return db.SaveChanges();

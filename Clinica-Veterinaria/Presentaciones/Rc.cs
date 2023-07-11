@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Clinica_Veterinaria.Presentaciones
 {
@@ -179,7 +180,7 @@ namespace Clinica_Veterinaria.Presentaciones
 
         private void radioButtonIdPersona_CheckedChanged(object sender, EventArgs e)// RADIO BUTTON ID
         {
-            if (radioButtonIdPersona.Checked == true)
+            if (radioButtonIdPersona.Checked == true)//Si el radio button esta seleccionado
             {
                 textBox2.Enabled = true;
                 button2.Enabled = true;
@@ -192,9 +193,37 @@ namespace Clinica_Veterinaria.Presentaciones
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object sender, EventArgs e)//TEXTBOX PARA BUSCAR POR ID
         {
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)//Boton para buscar por ID
+        {
+            if (radioButtonIdPersona.Checked) // Verifica si el RadioButton está marcado
+            {
+                if (int.TryParse(textBox2.Text, out int idCliente)) // Intenta convertir el texto del TextBox a un valor entero
+                {
+                    Cliente cliente = CrudCliente.BuscarCliente(idCliente); // Buscar la cliente por ID
+
+                    if (cliente != null)
+                    {
+                        // Crear una lista temporal con la familia encontrada
+                        List<Cliente> ClienteEncontrados = new List<Cliente> { cliente };
+
+                        // Asignar la lista como origen de datos del DataGridView
+                        dataGridView1.DataSource = ClienteEncontrados;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontró el Cliente con el ID especificado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, ingresa un valor numérico válido para el ID del Cliente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

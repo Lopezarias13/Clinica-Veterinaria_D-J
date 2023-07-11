@@ -37,13 +37,13 @@ namespace Clinica_Veterinaria.Presentaciones
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//Boton Registra Cliente
         {
             Rc rc = new Rc();
             rc.Show();
         }
 
-        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)//Boton Salir
         {
             DialogResult result = MessageBox.Show("¿Estás seguro que deseas salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -51,6 +51,12 @@ namespace Clinica_Veterinaria.Presentaciones
             {
                 Application.Exit(); // Cerrar la aplicación
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)//Boton Registra Mascota
+        {
+            RPaciente rp = new RPaciente(); // Instanciar el formulario
+            rp.Show();
         }
     }
 }

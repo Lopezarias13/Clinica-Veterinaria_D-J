@@ -117,55 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="dniLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="telefonoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="codigoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="direccionLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="nombreLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <metadata name="apellido1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="nombreLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="direccionLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="codigoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="telefonoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="dniLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHISURBVDhPlVLLLkNRFJVKPH7BwI94tBJjRIkhIyTSSDAz
-        KPH8AYm01RKzTiQeESVpPVraEreceytFW+cciURcRgy3vdtTl6ShVrJyB/estR9rV5WQy+XqNEOOabq4
-        0HT5kdLlO36TKV2MZjKZWvWsPBh7bEwZkiWuOfiP72A+koeFIwGrcQFJJgGNtYv0Q4N6/hNUmcR751lw
-        baVhKSrAe1rkckzAxAGHfU1CyhCXjLEaJbNAbcex8tDGNcwdCnCFOAzsFjm8x2EduxhHE+oEC40omQWa
-        2RtOQ/929kv4nWQyFSmOg2+jSmaBFja9c1VWXCIZ0E5wsW9KZoG2/ZcBsWBgyFcls0BReX4ZocTAGXUg
-        TpTMAuUcv+IwiEssJySO4GITFKcuh5XMAh0J5bybzMLQ5k1ZcQhjxDdmjPN6JfsJOhLKmTrx4SHNhvMY
-        KR4Vtl2obMgXnB/uA4GI2dvmhWCwWkkt0JFQzhQVLatIcUxtU+XbgD9i9rVD1r8CfHFmDdxum5JWBtbV
-        6kt7PCAWpuC1x4G0r/7LJIhtJybH156cdmXgANNp96nflQHcVTbW2fJlYjodz+pX5SiYdDT7eHfr80u3
-        o+kT16Pdj+9ddIUAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wAAADsABataJCQAAAchJREFUOE+VUssuQ1EUlUo8fsHAj3i0EmNEiSEjJNJIMDMo8fwBibTVErNOJB4R
+        JWk9WtoSt5x7K0Vb5xyJRFxGDLe921OXpKFWsnIH96y1H2tXlZDL5eo0Q45purjQdPmR0uU7fpMpXYxm
+        Mpla9aw8GHtsTBmSJa45+I/vYD6Sh4UjAatxAUkmAY21i/RDg3r+E1SZxHvnWXBtpWEpKsB7WuRyTMDE
+        AYd9TULKEJeMsRols0Btx7Hy0MY1zB0KcIU4DOwWObzHYR27GEcT6gQLjSiZBZrZG05D/3b2S/idZDIV
+        KY6Db6NKZoEWNr1zVVZcIhnQTnCxb0pmgbb9lwGxYGDIVyWzQFF5fhmhxMAZdSBOlMwC5Ry/4jCISywn
+        JI7gYhMUpy6HlcwCHQnlvJvMwtDmTVlxCGPEN2aM83ol+wk6EsqZOvHhIc2G8xgpHhW2XahsyBecH+4D
+        gYjZ2+aFYLBaSS3QkVDOFBUtq0hxTG1T5duAP2L2tUPWvwJ8cWYN3G6bklYG1tXqS3s8IBam4LXHgbSv
+        /sskiG0nJsfXnpx2ZeAA02n3qd+VAdxVNtbZ8mViOh3P6lflKJh0NPt4d+vzS7ej6RPXo92P7110hQAA
+        AABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="nombreLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="apellido1.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="direccionLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="codigoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="telefonoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="dniLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
 </root>
