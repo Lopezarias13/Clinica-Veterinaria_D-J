@@ -42,5 +42,15 @@ namespace Clinica_Veterinaria.Presentaciones
             Rc rc = new Rc();
             rc.Show();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Estás seguro que deseas salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit(); // Cerrar la aplicación
+            }
+        }
     }
 }
