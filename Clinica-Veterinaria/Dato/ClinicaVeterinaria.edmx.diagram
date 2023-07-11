@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="87a74ece304c4c67890a065c3c8fb9e0" Name="Diagram1" >
+        <EntityTypeShape EntityType="ClinicaVeterinaria.Usuario" Width="1.5" PointX="0.75" PointY="0.875" />
+        <EntityTypeShape EntityType="ClinicaVeterinaria.Bitacora" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="ClinicaVeterinaria.UsuarioBitacora" />
+        <EntityTypeShape EntityType="ClinicaVeterinaria.Paciente" Width="1.5" PointX="2.5" PointY="3.75" />
+        <EntityTypeShape EntityType="ClinicaVeterinaria.Cliente" Width="1.5" PointX="5" PointY="0.875" />
+        <AssociationConnector Association="ClinicaVeterinaria.ClientePaciente" />
+        <EntityTypeShape EntityType="ClinicaVeterinaria.HistorialMedico" Width="1.5" PointX="5.125" PointY="4.125" />
+        <EntityTypeShape EntityType="ClinicaVeterinaria.Vacuna" Width="1.5" PointX="7.625" PointY="4.125" />
+        <AssociationConnector Association="ClinicaVeterinaria.VacunaHistorialMedico" />
+        <AssociationConnector Association="ClinicaVeterinaria.PacienteHistorialMedico" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
