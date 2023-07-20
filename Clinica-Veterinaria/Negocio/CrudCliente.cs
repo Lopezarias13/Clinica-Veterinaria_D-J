@@ -15,11 +15,11 @@ namespace Clinica_Veterinaria.Negocio
         //Intancia de la base de datos
         public static ClinicaVeterinariaContainer db = new ClinicaVeterinariaContainer();
 
-        public static List<Cliente> ListarCliente()// Metodo para listar todos los familias
+        public static List<Cliente> ListarCliente()// Metodo para listar todos los cliente
         {
             return db.Clientes.ToList();    
         }
-        public static int AgregarCliente(Cliente C)// Metodo para agregar un familia
+        public static int AgregarCliente(Cliente C)// Metodo para agregar un cliente
         {
             db.Clientes.Add(C);
             return db.SaveChanges();
@@ -31,13 +31,13 @@ namespace Clinica_Veterinaria.Negocio
             return db.Clientes.Find(id);
         }
         //Metodo para editar un familia
-        public static int EditarCliente(Cliente C)// Metodo para editar un familia
+        public static int EditarCliente(Cliente C)// Metodo para editar un cliente
         {
             db.Entry(C).State = EntityState.Modified;
             return db.SaveChanges();
         }
         //Metodo para eliminar un familia
-        public static int EliminarCliente(int id)// Metodo para eliminar un familia 
+        public static int EliminarCliente(int id)// Metodo para eliminar un cliente 
         {
             Cliente AEliminar = BuscarCliente(id);
             db.Clientes.Remove(AEliminar);

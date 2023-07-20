@@ -1,5 +1,6 @@
 ﻿using Clinica_Veterinaria.Dato;
 using Clinica_Veterinaria.Negocio;
+using Clinica_Veterinaria.Presentaciones;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,7 +23,6 @@ namespace Clinica_Veterinaria.Presentaciones
 
         private void button2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Rc_Load(object sender, EventArgs e)
@@ -66,9 +66,6 @@ namespace Clinica_Veterinaria.Presentaciones
             cliente.Telefono = telefonoTextBox.Text;
             cliente.DNI = DnitextBox1.Text;
 
-
-            
-
             if (CrudCliente.AgregarCliente(cliente) > 0)
             {
                 MessageBox.Show("Cliente Registrado con Éxito!!", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -78,8 +75,7 @@ namespace Clinica_Veterinaria.Presentaciones
                 MessageBox.Show("No se pudo guardar la Cliente", "Fallo!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-
-        private void Limpiar()
+        private void Limpiar()//Metodo para limpiar los campos de texto
         {
             //idTextBox.Clear();
             codigoTextBox.Clear();
@@ -87,13 +83,13 @@ namespace Clinica_Veterinaria.Presentaciones
             property1TextBox.Clear();
             direccionTextBox.Clear();
             telefonoTextBox.Clear();
+            DnitextBox1.Clear();
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)//bOTON CANCELAR
         {
             this.Close();
         }
-
         private void buttonNuevo_Click(object sender, EventArgs e)//BOTON NUEVO
         {
             Limpiar();
@@ -106,38 +102,43 @@ namespace Clinica_Veterinaria.Presentaciones
 
         private void buttonModificar_Click(object sender, EventArgs e)//BOTON MODIFICAR 
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (dataGridView1.SelectedRows.Count > 0)// Verificar que se haya seleccionado un cliente
             {
-                int idCliente = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);// Obtener el ID de la fila seleccionada
+                int idCliente = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["Id"].Value);// Obtener el id del cliente seleccionado
 
-                // Buscar la familia por su ID
-                Cliente cliente = CrudCliente.BuscarCliente(idCliente);
+                Cliente cliente = CrudCliente.BuscarCliente(idCliente);// Buscar la Cliente por ID
 
-                if (cliente != null)
+                if (cliente != null)// Si el cliente es diferente de null, significa que se encontró
                 {
-                    // Asignar los nuevos valores a la familia
+                    // Cargar los valores del cliente en los campos del formulario
+                    codigoTextBox.Text = cliente.Codigo;
+                    apellido1TextBox.Text = cliente.Apellido;
+                    property1TextBox.Text = cliente.Nombre;
+                    direccionTextBox.Text = cliente.Direccion;
+                    telefonoTextBox.Text = cliente.Telefono;
+                    DnitextBox1.Text = cliente.DNI;
+
+                    // Realizar la modificación del cliente
                     cliente.Codigo = codigoTextBox.Text;
                     cliente.Apellido = apellido1TextBox.Text;
+                    cliente.Nombre = property1TextBox.Text;
                     cliente.Direccion = direccionTextBox.Text;
                     cliente.Telefono = telefonoTextBox.Text;
                     cliente.DNI = DnitextBox1.Text;
 
-                    // Guardar los cambios en la base de datos
-                    int resultado = CrudCliente.EditarCliente(cliente);
-
-                    if (resultado > 0)
+                    if (CrudCliente.EditarCliente(cliente) > 0)
                     {
-                        MessageBox.Show("Cliente modificado exitosamente", "Modificado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Cliente Modificado con Éxito!!", "Modificado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Limpiar();
                     }
                     else
                     {
-                        MessageBox.Show("No se pudo modificar la Cliente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("No se pudo modificar el Cliente", "Fallo!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("No se encontró la Cliente seleccionada", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("No se encontró el Cliente con el ID especificado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -145,8 +146,7 @@ namespace Clinica_Veterinaria.Presentaciones
                 MessageBox.Show("Debes seleccionar una fila para modificar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void buttonEliminar_Click(object sender, EventArgs e)
+        private void buttonEliminar_Click(object sender, EventArgs e)//BOTON ELIMINAR
         {
             // Obtener el ID de la fila seleccionada en el DataGridView
             if (dataGridView1.SelectedRows.Count > 0)
@@ -164,7 +164,6 @@ namespace Clinica_Veterinaria.Presentaciones
                     if (resultado > 0)// Si el resultado es mayor a 0, significa que se eliminó la cliente
                     {
                         MessageBox.Show("¡Cliente eliminado exitosamente!", "Eliminado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                     }
                     else
                     {
@@ -197,7 +196,6 @@ namespace Clinica_Veterinaria.Presentaciones
         {
 
         }
-
         private void button2_Click_1(object sender, EventArgs e)//Boton para buscar por ID
         {
             if (radioButtonIdPersona.Checked) // Verifica si el RadioButton está marcado
@@ -224,6 +222,16 @@ namespace Clinica_Veterinaria.Presentaciones
                     MessageBox.Show("Por favor, ingresa un valor numérico válido para el ID del Cliente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void DnitextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
         }
     }
 }

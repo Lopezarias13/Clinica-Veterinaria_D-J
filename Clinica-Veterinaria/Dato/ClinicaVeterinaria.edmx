@@ -208,7 +208,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Property1" Type="String" Nullable="false" />
+          <Property Name="Property1" Nullable="false" Type="String" />
           <Property Name="Codigo" Type="String" Nullable="false" />
           <Property Name="Alias" Type="String" Nullable="false" />
           <Property Name="Especie" Type="String" Nullable="false" />

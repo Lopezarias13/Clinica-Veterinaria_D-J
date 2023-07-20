@@ -55,8 +55,10 @@ namespace Clinica_Veterinaria.Presentaciones
 
         private void button3_Click(object sender, EventArgs e)//Boton Registra Mascota
         {
-            RPaciente rp = new RPaciente(); // Instanciar el formulario
-            rp.Show();
+            RPaciente rp = new RPaciente();// Instanciar el formulario
+            //Limpiar();
+            rp.ShowDialog();// Mostrar el formulario
+            //rp.Show();// Mostrar el formulario
         }
     }
 }

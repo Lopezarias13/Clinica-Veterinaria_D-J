@@ -49,12 +49,12 @@
             this.property1TextBox = new System.Windows.Forms.TextBox();
             this.apellido1TextBox = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.radioButtonIdPersona = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             nombreLabel = new System.Windows.Forms.Label();
             apellido1 = new System.Windows.Forms.Label();
             direccionLabel = new System.Windows.Forms.Label();
@@ -130,6 +130,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.LightGray;
             this.groupBox1.Controls.Add(this.DnitextBox1);
             this.groupBox1.Controls.Add(dniLabel);
             this.groupBox1.Controls.Add(this.button1);
@@ -276,6 +277,20 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Buscar";
             // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(596, 19);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(48, 41);
+            this.button2.TabIndex = 32;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(258, 26);
@@ -316,6 +331,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(839, 285);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // pictureBox1
             // 
@@ -326,20 +342,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(596, 19);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(48, 41);
-            this.button2.TabIndex = 32;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // Rc
             // 
@@ -379,12 +381,12 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox DnitextBox1;
         private System.Windows.Forms.TextBox telefonoTextBox;
         private System.Windows.Forms.TextBox direccionTextBox;
         private System.Windows.Forms.TextBox codigoTextBox;
         private System.Windows.Forms.TextBox property1TextBox;
         private System.Windows.Forms.TextBox apellido1TextBox;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox DnitextBox1;
     }
 }
