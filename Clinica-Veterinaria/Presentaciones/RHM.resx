@@ -123,12 +123,6 @@
   <metadata name="fechaEnfermedadLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="pacienteIdLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="vacunaIdLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <metadata name="clinicaVeterinariaDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -141,4 +135,19 @@
   <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>662, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAchJREFUOE+VUssuQ1EUlUo8fsHAj3i0EmNEiSEjJNJIMDMo8fwBibTVErNOJB4R
+        JWk9WtoSt5x7K0Vb5xyJRFxGDLe921OXpKFWsnIH96y1H2tXlZDL5eo0Q45purjQdPmR0uU7fpMpXYxm
+        Mpla9aw8GHtsTBmSJa45+I/vYD6Sh4UjAatxAUkmAY21i/RDg3r+E1SZxHvnWXBtpWEpKsB7WuRyTMDE
+        AYd9TULKEJeMsRols0Btx7Hy0MY1zB0KcIU4DOwWObzHYR27GEcT6gQLjSiZBZrZG05D/3b2S/idZDIV
+        KY6Db6NKZoEWNr1zVVZcIhnQTnCxb0pmgbb9lwGxYGDIVyWzQFF5fhmhxMAZdSBOlMwC5Ry/4jCISywn
+        JI7gYhMUpy6HlcwCHQnlvJvMwtDmTVlxCGPEN2aM83ol+wk6EsqZOvHhIc2G8xgpHhW2XahsyBecH+4D
+        gYjZ2+aFYLBaSS3QkVDOFBUtq0hxTG1T5duAP2L2tUPWvwJ8cWYN3G6bklYG1tXqS3s8IBam4LXHgbSv
+        /sskiG0nJsfXnpx2ZeAA02n3qd+VAdxVNtbZ8mViOh3P6lflKJh0NPt4d+vzS7ej6RPXo92P7110hQAA
+        AABJRU5ErkJggg==
+</value>
+  </data>
 </root>

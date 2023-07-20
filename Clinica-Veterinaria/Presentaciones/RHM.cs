@@ -31,5 +31,15 @@ namespace Clinica_Veterinaria.Presentaciones
             this.historialMedicoSetTableAdapter.Fill(this.clinicaVeterinariaDataSet.HistorialMedicoSet);
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void radioButtonIdPersona_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
