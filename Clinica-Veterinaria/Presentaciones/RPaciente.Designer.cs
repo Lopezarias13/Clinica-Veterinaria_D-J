@@ -41,7 +41,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RPaciente));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.radioButtonIdPersona = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -67,10 +66,11 @@
             this.buttonNuevo = new System.Windows.Forms.Button();
             this.pacientesTableAdapter = new Clinica_Veterinaria.ClinicaVeterinariaDataSetTableAdapters.PacientesTableAdapter();
             this.tableAdapterManager = new Clinica_Veterinaria.ClinicaVeterinariaDataSetTableAdapters.TableAdapterManager();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.entityCommand1 = new System.Data.Entity.Core.EntityClient.EntityCommand();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             codigoLabel = new System.Windows.Forms.Label();
             aliasLabel = new System.Windows.Forms.Label();
             especieLabel = new System.Windows.Forms.Label();
@@ -86,9 +86,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pacientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clinicaVeterinariaDataSet)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // codigoLabel
@@ -209,20 +209,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Buscar";
             // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(626, 25);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(34, 30);
-            this.button2.TabIndex = 32;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(285, 26);
@@ -236,10 +222,10 @@
             this.radioButtonIdPersona.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonIdPersona.Location = new System.Drawing.Point(160, 29);
             this.radioButtonIdPersona.Name = "radioButtonIdPersona";
-            this.radioButtonIdPersona.Size = new System.Drawing.Size(107, 24);
+            this.radioButtonIdPersona.Size = new System.Drawing.Size(161, 24);
             this.radioButtonIdPersona.TabIndex = 1;
             this.radioButtonIdPersona.TabStop = true;
-            this.radioButtonIdPersona.Text = "Id Paciente";
+            this.radioButtonIdPersona.Text = "Id Paciente dgasdf";
             this.radioButtonIdPersona.UseVisualStyleBackColor = true;
             this.radioButtonIdPersona.CheckedChanged += new System.EventHandler(this.radioButtonIdPersona_CheckedChanged);
             // 
@@ -487,16 +473,6 @@
             this.tableAdapterManager.UsuariosTableAdapter = null;
             this.tableAdapterManager.VacunasTableAdapter = null;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Clinica_Veterinaria.Properties.Resources.veterinario;
-            this.pictureBox1.Location = new System.Drawing.Point(1352, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(113, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 58;
-            this.pictureBox1.TabStop = false;
-            // 
             // entityCommand1
             // 
             this.entityCommand1.CommandTimeout = 0;
@@ -522,6 +498,30 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Clinica_Veterinaria.Properties.Resources.veterinario;
+            this.pictureBox1.Location = new System.Drawing.Point(1352, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(113, 68);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 58;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button2.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(626, 25);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(34, 30);
+            this.button2.TabIndex = 32;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // RPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -544,9 +544,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.clinicaVeterinariaDataSet)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
